@@ -1,0 +1,32 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "perosnal website",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack --watch",
+    "build": "node_modules/.bin/webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sheldon Lai",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^1.0.0",
+    "@types/react-router": "^4.0.25",
+    "@types/react-router-dom": "^4.2.6",
+    "awesome-typescript-loader": "^5.0.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
+    "style-loader": "^0.21.0",
+    "tsc": "^1.20150623.0",
+    "typeface-roboto": "0.0.54",
+    "webpack": "^4.8.3"
+  },
+  "devDependencies": {
+    "typescript": "^2.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}

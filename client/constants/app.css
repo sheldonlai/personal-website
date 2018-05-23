@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+    min-width: 320px;
+}
+.App {
+    display: flex;
+    flex-flow: column;
+}
+.page {
+    padding: 0 24px;
+}
+.example-enter {
+    opacity: 0.01;
+}
+a {color:inherit;}      /* unvisited link */
+a:visited {color:inherit;}  /* visited link */
+a:hover {color:inherit;}  /* mouse over link */
+a:active {color:inherit;}  /* selected link */
