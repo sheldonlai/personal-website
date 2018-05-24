@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+  min-width: 320px;
+}
+
+.App {
+  display: flex;
+  flex-flow: column;
+}
+
+.page {
+  padding: 0 24px;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+a {
+  color: inherit;
+}
+
+/* unvisited link */
+a:visited {
+  color: inherit;
+}
+
+/* visited link */
+a:hover {
+  color: inherit;
+}
+
+/* mouse over link */
+a:active {
+  color: inherit;
+}
+
+/* selected link */
+
+.slideright-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateX(50%);
+}
+
+.slideright-enter-active {
+  opacity: 1;
+  transform: scale(1) translateX(0%);
+  transition: all 800ms ease-out;
+}
+
+.slideleft-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateX(-50%);
+}
+
+.slideleft-enter-active {
+  opacity: 1;
+  transform: scale(1) translateX(0%);
+  transition: all 800ms ease-out;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: all 100ms ease-out;
+}
+
+.fadeslow-enter {
+  opacity: 0;
+}
+
+.fadeslow-enter-active {
+  opacity: 1;
+  transition: all 1000ms ease-out;
+}

@@ -30,7 +30,7 @@ export class SmallMenu extends React.Component<props> {
                     textAlign: 'center', ...menuButtonStyle,
                     fontSize: 20
                   }}>
-            Askalot
+            Sheldon's Profile
           </Button>
 
 
@@ -38,7 +38,7 @@ export class SmallMenu extends React.Component<props> {
         {
           !this.props.collapsed &&
           <div>
-            {this.props.buttons.map((button: MenuButton) => button.toLinkTag(true))}
+            {this.props.buttons.map((button: MenuButton, index) => button.toLinkTag(index, true))}
           </div>
         }
       </div>

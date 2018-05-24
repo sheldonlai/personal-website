@@ -32,7 +32,7 @@ export class LargeMenu extends React.Component<props> {
 
         </div>
         <div>
-          {this.props.buttons.map((button: MenuButton) => button.toLinkTag())}
+          {this.props.buttons.map((button: MenuButton, index) => button.toLinkTag(index))}
         </div>
       </Toolbar>
     )

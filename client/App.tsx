@@ -1,15 +1,15 @@
 import * as React from "react";
 import {Menu} from "./menu/Menu";
-import {Route, Router} from "react-router";
+import {Route} from "react-router";
 import {Routes} from "./constants/Routes";
-import {RouterController} from "./controllers/RouterController";
 import {About} from "./about/About";
 import {Home} from "./home/Home";
+import {HashRouter} from "react-router-dom";
 
 export class App extends React.Component {
   render() {
     return (
-      <Router history={RouterController.history}>
+      <HashRouter>
         <div>
           <Route path={Routes.home} component={Menu}/>
           <div style={{padding: 10}}>
@@ -17,7 +17,7 @@ export class App extends React.Component {
             <Route exact path={Routes.about} component={About}/>
           </div>
         </div>
-      </Router>
+      </HashRouter>
     )
   }
 }

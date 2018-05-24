@@ -13,9 +13,9 @@ export class MenuButton {
     this.color = color;
   }
 
-  toLinkTag(fullWidth?: boolean) {
+  toLinkTag(key, fullWidth?: boolean) {
     return (
-      <CustomLink to={this.link} style={{color: this.color}}>
+      <CustomLink to={this.link} style={{color: this.color}} key={key}>
         <Button color="inherit" style={{...menuButtonStyle, width: fullWidth ? "100%" : undefined}}>
           {this.name}
         </Button>
