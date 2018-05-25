@@ -59,6 +59,10 @@ a:active {
   transition: all 800ms ease-out;
 }
 
+.fade-appear{
+  opacity: 0;
+}
+
 .fade-enter {
   opacity: 0;
 }
@@ -66,6 +70,10 @@ a:active {
 .fade-enter-active {
   opacity: 1;
   transition: all 100ms ease-out;
+}
+
+.fade-enter-done {
+  opacity: 1;
 }
 
 .fadeslow-enter {

@@ -75,7 +75,7 @@ export class ListElement {
 
   toDOM() {
     return (
-      <Grid item xs={12} sm={8} md={10} style={{position: "relative"}}>
+      <Grid item xs={12} sm={11} md={10} style={{position: "relative"}}>
         <Paper style={{padding: "10px 20px"}} elevation={1}>
           <Typography variant="display1" style={{margin: "20px 0"}}>{this.title}</Typography>
           {this.url ? <Typography><a href={this.url}>{this.url}</a></Typography> : undefined}
@@ -139,7 +139,7 @@ export class JaggedList extends React.Component<props, state> {
     let l = [];
     let hidden = (key) => (
       <Hidden only="xs" key={key}>
-        <Grid item xs={12} sm={4} md={2}/>
+        <Grid item xs={12} sm={1} md={2}/>
       </Hidden>
     );
     // create jagged list

@@ -39,7 +39,7 @@ export class Menu extends React.Component<props> {
     if (pathName === Routes.home) {
       return "#FF6526";
     } else if (pathName.indexOf(Routes.about) !== -1) {
-      return "#6bb4f8";
+      return "#4663f8";
     } else {
       return "#37474F";
     }

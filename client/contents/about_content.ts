@@ -9,7 +9,7 @@ export const work_experiences = [
         endDate: "Sep 2017"
     }),
     new WorkExperience({
-        company: "Parahon Testing Enterprises",
+        company: "Paragon Testing Enterprises",
         position: "Software Developer Intern",
         startDate: "Sep 2015",
         endDate: "May 2016"

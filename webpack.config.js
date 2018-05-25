@@ -9,8 +9,8 @@ module.exports = {
   devtool: 'source-maps',
   cache: true,
   output: {
-    publicPath: '/build',
-    path: path.join(__dirname, './static/build'),
+    publicPath: '/build/',
+    path: path.join(__dirname, './static/build/'),
     filename: '[name].bundle.js',
   },
   resolve: {
