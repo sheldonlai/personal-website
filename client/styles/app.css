@@ -59,10 +59,6 @@ a:active {
   transition: all 800ms ease-out;
 }
 
-.fade-appear{
-  opacity: 0;
-}
-
 .fade-enter {
   opacity: 0;
 }
@@ -83,4 +79,26 @@ a:active {
 .fadeslow-enter-active {
   opacity: 1;
   transition: all 1000ms ease-out;
+}
+
+.menu-enter {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 150ms ease-out;
+}
+
+.menu-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 150ms ease-in;
 }

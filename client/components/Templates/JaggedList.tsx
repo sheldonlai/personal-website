@@ -111,6 +111,7 @@ export class JaggedList extends React.Component<props, state> {
   }
 
   timeout_load = (i: number) => {
+    let time = i*100
     setTimeout(() => {
       let newList = this.state.loading.slice();
       newList[i] = false;
@@ -118,7 +119,7 @@ export class JaggedList extends React.Component<props, state> {
       if (i < this.state.loading.length - 1) {
         this.timeout_load(i + 1);
       }
-    }, 50);
+    }, time);
   };
 
   animatedListItem = (content, key) => {
@@ -128,6 +129,7 @@ export class JaggedList extends React.Component<props, state> {
         key={key}
         in={!this.state.loading[key]}
         timeout={800}
+        unmountOnExit
         classNames={className}>
         {() => (content)}
       </CSSTransition>
@@ -157,16 +159,9 @@ export class JaggedList extends React.Component<props, state> {
     // return results
     return (
       <div>
-        <CSSTransition
-          in={true}
-          timeout={800}
-          classNames="fade">
-          {() => (
-            <Grid container spacing={32} style={{overflow: "hidden", paddingTop: "24px"}}>
-              {l}
-            </Grid>
-          )}
-        </CSSTransition>
+        <Grid container spacing={32} style={{overflow: "hidden", paddingTop: "24px"}}>
+          {l}
+        </Grid>
       </div>
     )
   }

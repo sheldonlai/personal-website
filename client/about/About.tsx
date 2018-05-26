@@ -24,7 +24,6 @@ export class About extends React.Component {
           timeout={800}
           classNames="fadeslow">
           {() => (
-
             <Grid item xs={12} sm={12} md={8} lg={6}>
               <Typography variant="display1" style={{textAlign: "center", ...margin}}>About Me</Typography>
               <Typography variant="body2" style={margin} gutterBottom>
@@ -32,7 +31,7 @@ export class About extends React.Component {
                 I have a strong interest in software engineering. In other words, I just like solving moderately
                 hard problems efficiently. With that said, I am still pretty good at mundane tasks like implementing
                 and designing websites. In the field of machine learning, I am no expert, but good enough to understand
-                and implement network architectures described in published papers in ML.
+                and implement network architectures described in published papers.
               </Typography>
 
               <Typography variant="headline" gutterBottom>Past Work Experiences:</Typography>

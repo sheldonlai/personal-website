@@ -23,7 +23,7 @@ export const home_content = [
       that they have worked with. Made use of React, and Material-UI with a Redux architecture on the front-end. Back-end
       uses Node.js 8.x with Express where logic is separated into API, Service, and Repository levels. 
       As for storage, Elasticsearch is for indexing records to allow quick search and MongoDB as the main database. Unit
-      tests were written in Jest executed in parallel.
+      tests were written in Jest and executable in parallel.
     `,
     url: "https://github.com/sheldonlai/project211124",
     img: ["/img/askalot_sample.png", "/img/askalot_sample_2.png"],
